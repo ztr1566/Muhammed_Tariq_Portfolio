@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed T. Rashid | Senior Interior Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#1a1a1a',
+                        light: '#f5f5f5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .portfolio-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.4), transparent);
+        }
+        /* Active Nav Link Styles */
+        .nav-active {
+            color: #D4AF37 !important;
+            font-weight: 700 !important;
+            border-bottom: 2px solid #D4AF37;
+            padding-bottom: 4px;
+        }
+    </style>
+</head>
+<body class="bg-light text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-serif font-bold tracking-widest text-dark cursor-pointer">M. TARIQ</a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#home" id="nav-home" class="hover:text-gold transition-colors uppercase nav-link">Home</a>
+                <a href="#about" id="nav-about" class="hover:text-gold transition-colors uppercase nav-link">About</a>
+                <a href="#skills" id="nav-skills" class="hover:text-gold transition-colors uppercase nav-link">Expertise</a>
+                <a href="#portfolio" id="nav-portfolio" class="hover:text-gold transition-colors uppercase nav-link">Portfolio</a>
+                <a href="#contact" id="nav-contact" class="hover:text-gold transition-colors uppercase nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 space-y-4 text-center shadow-lg">
+            <a href="#home" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full hover:text-gold py-2">HOME</a>
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full hover:text-gold py-2">ABOUT</a>
+            <a href="#skills" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full hover:text-gold py-2">EXPERTISE</a>
+            <a href="#portfolio" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full hover:text-gold py-2 font-bold text-gold">PORTFOLIO</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full hover:text-gold py-2">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="h-screen flex items-center justify-center bg-dark text-white relative overflow-hidden section-watch">
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Interior Background" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        
+        <div class="relative z-10 text-center px-4">
+            <p class="text-gold font-bold tracking-[0.2em] mb-4 uppercase text-sm">Riyadh Based</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Muhammed Tariq</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 max-w-2xl mx-auto">Senior Interior Designer crafting luxury residential & commercial spaces.</p>
+            <a href="#portfolio" class="border-2 border-white px-8 py-3 hover:bg-white hover:text-dark transition-all duration-300 tracking-widest text-sm font-bold inline-block">VIEW PROJECTS</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white section-watch">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-1/2 relative group cursor-pointer">
+                    <a href="https://www.facebook.com/mohamed.tareiq" target="_blank" title="Visit Facebook Profile">
+                        <div class="relative overflow-hidden shadow-xl rounded-sm">
+                            <img src="https://scontent.faly8-2.fna.fbcdn.net/v/t39.30808-6/509278806_23990938440560239_7637717361540681832_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGLbxcFX6lKRTlpl3a04qRaIoySzyVkkigijJLPJWSSKP1SL1k1rSiVJk7aZxDO324Xl6hTSQ08tTTXMCVbhRgk&_nc_ohc=T7QJwEGSKgAQ7kNvwF7ArDu&_nc_oc=AdnP30FZs5J3YR1K9sKmoawwfQdKkp8KWbLVAQueB-zWJ-rxUtF6fguViV9togafdDI&_nc_zt=23&_nc_ht=scontent.faly8-2.fna&_nc_gid=ja7Ha4sACCWgDTqwBijPew&oh=00_Afj0GZ8wfEhWtq4VW_KI1DWkoMXrMQigRc1-A-RckhVMKQ&oe=692C9056" alt="Muhammed Tariq" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-500 object-cover aspect-[3/4]">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                                <span class="text-white opacity-0 group-hover:opacity-100 font-bold tracking-wider border border-white px-4 py-2">CONNECT ON FACEBOOK</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-dark">Designing with Purpose & Precision</h2>
+                    <div class="w-16 h-1 bg-gold mb-8"></div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Innovative Senior Interior Designer with 5+ years of specialized experience in the Saudi market (Riyadh). I specialize in delivering high-end residential and commercial projects, managing the full design lifecycle from conceptualization to site supervision.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        My expertise lies in blending functionality with luxury aesthetics, utilizing advanced tools like <strong>Unreal Engine 5</strong> and <strong>3ds Max</strong> to create immersive visualizations that bring client visions to life.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 text-sm">
+                        <div>
+                            <h4 class="font-bold text-dark mb-2">LOCATION</h4>
+                            <p class="text-gray-500">Riyadh, Saudi Arabia</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark mb-2">EXPERIENCE</h4>
+                            <p class="text-gray-500">5+ Years (Egypt & KSA)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-dark text-white section-watch">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold mb-6">Technical Proficiency</h2>
+                    <p class="text-gray-400 mb-8">Leveraging cutting-edge software to deliver precision and photorealism in every project.</p>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-semibold">3ds Max & V-Ray</span><span class="text-gold">95%</span></div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-semibold">Unreal Engine 5</span><span class="text-gold">90%</span></div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-semibold">AutoCAD</span><span class="text-gold">95%</span></div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-semibold">Lumion</span><span class="text-gold">85%</span></div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center"><i class="fas fa-pencil-ruler text-4xl text-gold mb-4"></i><h4 class="font-bold">Space Planning</h4></div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center"><i class="fas fa-couch text-4xl text-gold mb-4"></i><h4 class="font-bold">FF&E Selection</h4></div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center"><i class="fas fa-hard-hat text-4xl text-gold mb-4"></i><h4 class="font-bold">Site Supervision</h4></div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center"><i class="fas fa-cubes text-4xl text-gold mb-4"></i><h4 class="font-bold">3D Modeling</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-24 bg-gray-50 section-watch">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-dark mb-4">Selected Works</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto">Comprehensive collection of Residential, Commercial, and Landscape projects executed with precision and creativity.</p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Sense Cafe -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sense Cafe" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Sense Cafe</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Hospitality Design</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Conceptualized the modern layout, designed custom joinery, and managed lighting selection to create a warm, inviting ambiance for customers.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Private Majlis (Oruhalt) -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Majlis" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Private Majlis (Oruhalt)</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Luxury Residential</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Developed the luxury classic concept, selected high-end marble and wall finishes, and supervised the installation of intricate wall moldings.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Roof Garden Lounge -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Roof Design" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Outdoor Roof Lounge</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Landscape & Lighting</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Designed the complete outdoor layout including pergolas and seating zones, selected weather-resistant materials, and created night-time lighting scenarios.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Classic Reception -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Classic Reception" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Classic Reception</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">High-End Detailing</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Created a sophisticated reception design focusing on symmetry, luxury furniture selection, and gold-accented detailing for a grand entrance.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Wielle House (Modern Bedroom) -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wielle House" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Wielle House Bedroom</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Modern Residential</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Designed a modern master bedroom concept focusing on minimal aesthetics, hidden LED lighting, and custom wardrobe solutions.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Netflix Themed Majlis -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Netflix Room" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Netflix Media Majlis</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Entertainment Space</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Designed a modern entertainment room with acoustic paneling, custom media units, and mood lighting for an immersive viewing experience.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Modern Living Area -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Modern Living Room" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Modern Living Area</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Space Planning</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Executed space planning for open-concept living areas, creating a fluid circulation path and selecting contemporary furniture pieces.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Commercial Dining Hall -->
+                <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dining Hall" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Commercial Dining Hall</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Restaurant Design</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Planned the seating arrangement for maximum capacity without compromising comfort, incorporating indoor greenery and industrial design elements.</p>
+                    </div>
+                </div>
+                
+                 <!-- 9. Westworld Bedroom -->
+                 <div class="group relative overflow-hidden bg-white shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Westworld Bedroom" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-serif font-bold mb-1">Westworld Master Bedroom</h3>
+                        <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Luxury Residential</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">Executed a contemporary bedroom design with wood paneling features, sophisticated color palettes, and custom headboard design.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white pt-20 pb-10 mt-auto section-watch">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-serif font-bold text-dark mb-8">Let's Create Something Exceptional</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12 text-gray-600">
+                <div class="flex items-center justify-center gap-2"><i class="fas fa-envelope text-gold"></i><a href="mailto:muhamedtariq0@gmail.com" class="hover:text-dark">muhamedtariq0@gmail.com</a></div>
+                <div class="flex items-center justify-center gap-2"><i class="fas fa-phone text-gold"></i><a href="tel:+966549256382" class="hover:text-dark">+966 54 925 6382</a></div>
+                <div class="flex items-center justify-center gap-2"><i class="fas fa-map-marker-alt text-gold"></i><span>Riyadh, Saudi Arabia</span></div>
+            </div>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://www.facebook.com/mohamed.tareiq" target="_blank" class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-lg transform hover:-translate-y-1">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2025 Muhammed Tariq. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Active Nav State -->
+    <script>
+        const navItems = document.querySelectorAll('.nav-link');
+
+        function setActiveNav(id) {
+            navItems.forEach(item => {
+                if(item.id === id) {
+                    item.classList.add('nav-active');
+                    item.classList.remove('text-gray-600');
+                } else {
+                    item.classList.remove('nav-active');
+                }
+            });
+        }
+        
+        // Scroll Spy Logic using Intersection Observer
+        let observer;
+
+        function startObserver() {
+            const sections = document.querySelectorAll('.section-watch');
+            
+            const options = {
+                root: null,
+                rootMargin: '-50% 0px -50% 0px', // Trigger when section is in middle of viewport
+                threshold: 0
+            };
+
+            observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if(entry.target.id === 'home') setActiveNav('nav-home');
+                        if(entry.target.id === 'about') setActiveNav('nav-about');
+                        if(entry.target.id === 'skills') setActiveNav('nav-skills');
+                        if(entry.target.id === 'portfolio') setActiveNav('nav-portfolio');
+                        if(entry.target.id === 'contact') setActiveNav('nav-contact');
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Initialize Observer on load
+        document.addEventListener('DOMContentLoaded', () => {
+            startObserver();
+        });
+
+    </script>
+</body>
+</html>
